@@ -1,0 +1,111 @@
+.wrapper {
+  font-size: 1vw;
+}
+
+.logo {
+  z-index: 3;
+  cursor: pointer;
+  position: fixed;
+  transition: 1s;
+  height: 3em;
+  top: 3em;
+  left: 4em;
+}
+
+.cover {
+  position: fixed;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0);
+}
+
+.iframe {
+  z-index: -1;
+  height: 100vh;
+  width: 100em;
+}
+
+.title {
+  position: fixed;
+  transition: 1s;
+  height: 2em;
+  top: 3.5em;
+  left: 7.5em;
+  fill: white;
+}
+
+.right{
+  background-color: #eee;
+  height: 100vh;
+  width: 35vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.left{
+  background-color: #eee;
+  height: 100vh;
+  width: 35vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hamburger {
+  font-size: 1rem;
+}
+
+.menu {
+  z-index: 1;
+  position: fixed;
+  right: -35vw;
+  top: 0;
+}
+
+.menu-show {
+  right: 0;
+}
+
+@media screen and (max-width: 959px) {
+  .logo {
+    transition: 0.5s;
+    height: 3rem;
+    top: 3rem;
+    left: 2rem;
+  }
+  .title {
+    transition: 0.5s;
+    top: 3.4rem;
+    height: 2rem;
+    left: 5.5rem;
+  }
+  .hamburger {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    transition: 0.5s;
+    height: 5vh;
+    top: 11em;
+    left: 7em;
+  }
+  .title {
+    transition: 0.5s;
+    top: 13.5em;
+    height: 5em;
+    left: 22em;
+  }
+  .hamburger {
+    font-size: 3.5vw;
+  }
+  .menu {
+    right: -45vw;
+  }
+  .menu-show {
+    right: 0;
+  }
+}

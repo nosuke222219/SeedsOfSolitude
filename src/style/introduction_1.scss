@@ -1,0 +1,174 @@
+.yu-gothic {
+  font-family: yu-gothic-pr6n, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubrik-new {
+  font-family: rubrik-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wrapper {
+  font-size: 1vw;
+  width: 100vw;
+  position: fixed;
+}
+
+.logo {
+  height: 55vh;
+  top: 9vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: absolute;
+  display: block;
+}
+
+.title {
+  position: absolute;
+  display: block;
+  top: 70vh;
+  height: 6vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.credit {
+  text-align: center;
+  font-size: 0.5em;
+  margin: 90vh auto 0 50vw;
+  transform: translate(-50%, 0);
+  letter-spacing: 0.5em;
+  text-indent: 0.5em;
+  white-space: nowrap;
+}
+
+.seminar-name {
+  position: absolute;
+  font-size: 0.8em;
+  line-height: 1em;
+  letter-spacing: 0.4em;
+  text-indent: 0.4em;
+  bottom: 7em;
+  left: 5em;
+}
+
+.button {
+  position: absolute;
+  right: 8em;
+  bottom: 4em;
+  width: 5em;
+}
+
+.header-content {
+  opacity: 1;
+}
+
+.header-logo {
+  transition: 1s;
+  height: 3em;
+  top: 3em;
+  left: 4em;
+  transform: translate(0, 0);
+}
+
+.header-title {
+  transition: 1s;
+  height: 2em;
+  top: 3.5em;
+  left: 7.5em;
+  transform: translate(0, 0);
+}
+
+.non-credit {
+  animation: hide 1s linear 0s;
+  animation-fill-mode: forwards;
+}
+
+.non-seminar-name {
+  animation: hide 1s linear 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+    display: inline;
+  }
+  99% {
+    opacity: 0;
+    display: inline;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .logo {
+    top: 22vh;
+    height: 40vh;
+  }
+  .title {
+    top: 67vh;
+    height: 4vh;
+  }
+  .credit {
+    display: none;
+  }
+  .seminar-name {
+    bottom: auto;
+    left: 0;
+    top: 93vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 2em;
+    line-height: 1em;
+    letter-spacing: 0.4em;
+    text-indent: 0.4em;
+  }
+  .button {
+    position: absolute;
+    top: 77vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 8em;
+    transition: 1s;
+  }
+  .button-down{
+    top: 84vh;
+  }
+  .header-logo {
+    transition: 0.5s;
+    height: 3rem;
+    top: 3rem;
+    left: 2rem;
+  }
+  .header-title {
+    transition: 0.5s;
+    top: 3.4rem;
+    height: 2rem;
+    left: 5.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button {
+    top: 77vh;
+    width: 18em;
+  }
+  .header-logo {
+    transition: 0.5s;
+    height: 5vh;
+    top: 11em;
+    left: 7em;
+  }
+  .header-title {
+    transition: 0.5s;
+    top: 13.5em;
+    height: 5em;
+    left: 22em;
+  }
+}

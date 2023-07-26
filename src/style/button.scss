@@ -1,0 +1,80 @@
+.button {
+  width: auto;
+}
+
+.button-circle {
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+  &:hover {
+    fill: black;
+    ~ .button-arrow {
+      stroke: white;
+    }
+  }
+}
+
+.button-arrow {
+  transition: 0.3s;
+}
+
+.button-name {
+  text-align: center;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  text-indent: 0.2em;
+  margin-bottom: 8%;
+  color: black;
+}
+
+.white {
+  opacity: 0;
+  .button-circle {
+    opacity: 0;
+  }
+
+  .button-arrow {
+    opacity: 0;
+  }
+}
+
+.black {
+  color: white;
+   .button-circle {
+    fill: transparent;
+    stroke: white;
+    &:hover {
+      fill: white;
+       ~ .button-arrow {
+        stroke: black;
+      }
+    }
+  }
+
+  .button-arrow {
+    stroke: white;
+  }
+}
+
+.rubrik-new {
+  font-family: rubrik-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media screen and (max-width: 959px) {
+  .button-name {
+    font-size: 2em;
+    letter-spacing: 0.5em;
+  }
+  .button-circle {
+    width: 80%;
+    transition: 0.3s;
+    &:hover {
+      fill: white;
+      ~ .button-arrow {
+        stroke: black;
+      }
+    }
+  }
+}

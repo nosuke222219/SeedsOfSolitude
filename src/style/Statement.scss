@@ -1,0 +1,169 @@
+.yu-gothic {
+  font-family: yu-gothic-pr6n, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubrik-new {
+  font-family: rubrik-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubrik-new-lite {
+  font-family: rubrik-new, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.wrapper {
+  transition: 1s;
+  font-size: 1vw;
+  display: flex;
+  flex-flow: column;
+  width: 101vw;
+  height: 101vh;
+  justify-content: center;
+  align-items: center;
+position: relative;
+  overflow: hidden;
+}
+
+.img {
+  position: absolute;
+  top: -10vh;
+  width: 120vw;
+  height: 120vh;
+  opacity: 0.1;
+}
+
+.wrapper-black {
+  background-color: black;
+}
+
+.title {
+  letter-spacing: 0.5em;
+  text-indent: 0.5em;
+  transition: 1s;
+}
+
+.title-small {
+  font-size: 0.1em;
+  letter-spacing: 3em;
+  text-indent: 3em;
+  font-weight: 400;
+  color: white;
+}
+
+.hide-jp {
+  z-index: 3;
+  height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  transition: 1s;
+  font-size: 1.2em;
+  letter-spacing: 0.5em;
+  line-height: 2.3em;
+  width: 60rem;
+  font-feature-settings: "palt";
+  color: white;
+}
+
+.statement-ja {
+  height: 25em;
+  margin-top: 2em;
+  display: inline;
+  animation: overflowchange 1.1s linear 0s;
+  animation-fill-mode: forwards;
+}
+
+.button {
+  position: absolute;
+  bottom: 5em;
+  right: 10em;
+  width: 5em;
+}
+
+@keyframes overflowchange {
+  0% {
+    overflow: hidden;
+  }
+  99% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: inherit;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .hide-jp {
+    width: 80vw;
+    font-size: 1.5em;
+  }
+  .statement-ja {
+    margin-bottom: 10em;
+  }
+  .button {
+    position: absolute;
+    top: 80vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 10em;
+    transition: 1s;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    letter-spacing: 0.5em;
+    text-indent: 0.5em;
+    transition: 1s;
+    font-size: 5em;
+    opacity: 1;
+  }
+  .title-hide {
+    opacity: 0;
+  }
+  .title-small {
+    transition-delay: 0s;
+    font-size: 2em;
+    letter-spacing: 3em;
+    text-indent: 3em;
+    font-weight: 400;
+    color: white;
+  }
+
+  .hide-jp {
+    height: 0;
+    margin-top: 0;
+    overflow: hidden;
+    transition: 1s;
+    font-size: 4em;
+    letter-spacing: 0.5em;
+    line-height: 2.3em;
+    width: 20em;
+    font-feature-settings: "palt";
+    color: white;
+  }
+
+  .statement-ja {
+    height: 60vh;
+    margin-top: 1em;
+    display: inline;
+    overflow-y: scroll;
+    animation: none;
+    margin-bottom: 5em;
+  }
+
+  .button {
+    position: absolute;
+    width: 18em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title-small {
+    letter-spacing: 1.1em;
+  }
+}
