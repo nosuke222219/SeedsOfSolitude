@@ -19,14 +19,10 @@ const Live: React.FC = () => {
         setChecked={setChecked}
       />
       <Menu className={`${style.menu} ${checked ? style.menuShow : ""}`} />
-      <iframe
-        className={style.iframe}
-        src="https://www.youtube.com/embed/GVaLs79zT1k"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
+      <div className={style.livebg}>
+        <h1>生放送は終了しました</h1>
+        <a href="https://www.youtube.com/live/GVaLs79zT1k?si=4qKoLnzyUU8fYbb9">アーカイブはこちら</a>
+      </div>
     </div>
   );
 };

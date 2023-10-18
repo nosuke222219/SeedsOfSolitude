@@ -68,6 +68,33 @@
   right: 0;
 }
 
+.livebg{
+  background-color: #222;
+  height: 100vh;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.livebg h1{
+  font-family: yu-gothic-pr6n, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #eee;
+}
+
+.livebg a{
+  font-family: yu-gothic-pr6n, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #eee;
+  font-size: 1.5vw;
+}
+
 @media screen and (max-width: 959px) {
   .logo {
     transition: 0.5s;

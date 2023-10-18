@@ -13,6 +13,7 @@
 .wrapper {
   font-size: 1vw;
   width: 100vw;
+  height: 95vh;
   position: fixed;
 }
 
@@ -35,6 +36,7 @@
 }
 
 .credit {
+  position: absolute;
   text-align: center;
   font-size: 0.5em;
   margin: 90vh auto 0 50vw;
@@ -82,12 +84,12 @@
 }
 
 .non-credit {
-  animation: hide 1s linear 0s;
+  animation: hide 0.3s linear 0s;
   animation-fill-mode: forwards;
 }
 
 .non-seminar-name {
-  animation: hide 1s linear 0s;
+  animation: hide 0.3s linear 0s;
   animation-fill-mode: forwards;
 }
 

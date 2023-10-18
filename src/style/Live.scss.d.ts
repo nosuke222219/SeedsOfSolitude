@@ -8,3 +8,4 @@ export const left: string;
 export const hamburger: string;
 export const menu: string;
 export const menuShow: string;
+export const livebg: string;

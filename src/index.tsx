@@ -6,11 +6,10 @@ import Live from './component/Live';
 import Statement from './component/Statement';
 import Flowers from './component/Flowers';
 
-
 class App extends React.Component {
   render () {
     return (
-      <Router basename={"https://nosuke222219.github.io/SeedsOfSolitude"}>
+      <Router basename={""}>
         <Switch>
           <Route exact path='/' component={Home}/> 
           <Route path='/live' component={Live}/> 
